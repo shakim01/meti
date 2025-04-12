@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Meti Alpha</title>
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --secondary-color: #66bb6a;
+      --highlight-color: #ffc107;
+      --text-color: #fff;
+      --background-color: #f0fdf4;
+      --footer-color: #222;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+      color: #333;
+    }
+
+    nav {
+      background-color: var(--footer-color);
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: var(--highlight-color);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      background-color: white;
+      color: var(--primary-color);
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #c8e6c9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--footer-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="investment.html">Investment</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Meti Alpha</h1>
+    <p>Your trusted partner in smart trading and investment strategies.</p>
+    <a class="cta-button" href="investment.html">Start Investing</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Meti Alpha</p>
+  </footer>
+
+</body>
+</html>

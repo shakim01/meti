@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposit/Withdrawal - Meti Alpha</title>
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --secondary-color: #66bb6a;
+      --highlight-color: #ffc107;
+      --text-color: #fff;
+      --background-color: #f0fdf4;
+      --footer-color: #222;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+      color: #333;
+    }
+
+    nav {
+      background-color: var(--footer-color);
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: var(--highlight-color);
+    }
+
+    .transaction-form {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .transaction-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .cta-button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+
+    .cta-button:hover {
+      background-color: #c8e6c9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--footer-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="investment.html">Investment</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <section class="transaction-form">
+    <h2>Deposit or Withdraw</h2>
+    <input type="number" placeholder="Amount" required>
+    <select required>
+      <option value="deposit">Deposit</option>
+      <option value="withdrawal">Withdrawal</option>
+    </select>
+    <button class="cta-button" onclick="alert('Transaction submitted')">Submit Transaction</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Meti Alpha</p>
+  </footer>
+
+</body>
+</html>

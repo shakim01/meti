@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Packages - Meti Alpha</title>
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --secondary-color: #66bb6a;
+      --highlight-color: #ffc107;
+      --text-color: #fff;
+      --background-color: #f0fdf4;
+      --footer-color: #222;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+      color: #333;
+    }
+
+    nav {
+      background-color: var(--footer-color);
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: var(--highlight-color);
+    }
+
+    .investment-options {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+    }
+
+    .investment-package {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 25%;
+    }
+
+    .investment-package h2 {
+      font-size: 2em;
+      color: var(--primary-color);
+    }
+
+    .investment-package p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .cta-button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+
+    .cta-button:hover {
+      background-color: #c8e6c9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--footer-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="investment.html">Investment</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <section class="investment-options">
+    <div class="investment-package">
+      <h2>Silver Package</h2>
+      <p>$100 - 40% Weekly Return</p>
+      <p>Expected After 2 Weeks: $140</p>
+      <a href="deposit-withdrawal.html" class="cta-button">Choose Package</a>
+    </div>
+    <div class="investment-package">
+      <h2>Gold Package</h2>
+      <p>$500 - 40% Weekly Return</p>
+      <p>Expected After 2 Weeks: $700</p>
+      <a href="deposit-withdrawal.html" class="cta-button">Choose Package</a>
+    </div>
+    <div class="investment-package">
+      <h2>Platinum Package</h2>
+      <p>$1000 - 50% Weekly Return</p>
+      <p>Expected After 2 Weeks: $1500</p>
+      <a href="deposit-withdrawal.html" class="cta-button">Choose Package</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Meti Alpha</p>
+  </footer>
+
+</body>
+</html>
